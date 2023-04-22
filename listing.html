@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Line - Online Food Ordering Website HTML Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="icofont/icofont.min.css" rel="stylesheet">
+        <link href="fontawesome/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    </head>
+    <body>
+        <nav class="navbar bg-white shadow-sm py-3">
+            <div class="container px-2">
+                <div class="row py-1 width-100">
+                    <div class="col-md-3">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="images/logo.png">
+                        </a>
+                        <div class="navbar-toggler">
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <ul id="list">
+                            <li>
+                                <a href="index.html" class="active">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="offers.html">
+                                    <i class="icofont-sale-discount"></i>
+                                    Offers
+                                    <span class="danger-badge">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-dropdown">
+								<a class="tab-links" href="#resturants-menu">
+									Resturants
+                                    <i class="icofont-caret-down"></i>
+								</a>
+								<ul id="resturants-menu" class="list-menu py-1">
+									<li>
+										<a href="listing.html">Listing</a>
+									</li>
+									<li>
+										<a href="detail.html">Detail + Cart</a>
+									</li>
+									<li>
+										<a href="checkout.html">Checkout</a>
+									</li>
+								</ul>
+							</li>
+                            <li class="menu-dropdown">
+								<a class="tab-links" href="#pages-menu">
+                                    Pages
+                                    <i class="icofont-caret-down"></i>
+								</a>
+								<ul id="pages-menu" class="list-menu py-1">
+									<li>
+										<a href="track-order.html">Track Order</a>
+									</li>
+									<li>
+										<a href="invoice.html">Invoice</a>
+									</li>
+									<li>
+										<a href="login.html">Login</a>
+									</li>
+                                    <li>
+										<a href="register.html">Register</a>
+									</li>
+                                    <li>
+										<a href="#">404</a>
+									</li>
+                                    <li>
+										<a href="#">Extra :)</a>
+									</li>
+								</ul>
+							</li>
+                            <li class="menu-dropdown">
+								<a class="tab-links" href="#account-list">
+                                    <img src="images/4.png" id="account-pic">
+                                    My Account
+                                    <i class="icofont-caret-down"></i>
+								</a>
+								<ul id="account-list" class="list-menu py-1">
+									<li>
+										<a href="orders.html#orders">
+                                            <i class="icofont-food-cart"></i>
+                                            Orders
+                                        </a>
+									</li>
+									<li>
+										<a href="orders.html#offers">
+                                            <i class="icofont-sale-discount"></i>
+                                            Offers
+                                        </a>
+									</li>
+									<li>
+										<a href="orders.html#favourites">
+                                            <i class="icofont-heart"></i>
+                                            Favourites
+                                        </a>
+									</li>
+                                    <li>
+										<a href="orders.html#payments">
+                                            <i class="icofont-credit-card"></i>
+                                            Payments
+                                        </a>
+									</li>
+                                    <li>
+										<a href="orders.html#addresses">
+                                            <i class="icofont-location-pin"></i>
+                                            Addresses
+                                        </a>
+									</li>
+								</ul>
+							</li>
+                            <li class="menu-dropdown">
+                                <a id="btn-modal" href="#">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    Cart
+                                    <span class="success-badge">
+                                        5
+                                    </span>
+                                    <i class="icofont-caret-down"></i>
+                                </a>
+                                <div id="list-modal" class="shadow-sm border-0 tab-content">
+                                    <div class="row p-4">
+                                        <div class="col-3 p-0 m-0">
+                                            <img id="cart-img" class="p-1" src="images/1.jpg">
+                                        </div>
+                                        <div class="col-9 t-align-left py-0 px-1 m-0">
+                                            <h6 class="color-black mb-0 font-xbold font-12">
+                                                Gus's World Famous Chicken
+                                            </h6>
+                                            <p class="color-grey mb-0 mt-1 font-11">
+                                                310 S Front St, Memphis, USA
+                                            </p>
+                                            <small>
+                                                <a class="color-orange font-xbold" href="#">
+                                                    View Full Menu
+                                                </a>
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="t-align-left border-top p-4">
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-danger item-1 mr-1"></i>
+                                         Chicken Tikka Sub 12" (30 cm) x 1 
+                                        <span class="f-right">
+                                             $314
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-success item-2 mr-1"></i>
+                                         Corn &amp; Peas Salad x 1 
+                                        <span class="f-right">
+                                            $209
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-success item-2 mr-1"></i>
+                                         Veg Seekh Sub 6" (15 cm) x 1 
+                                        <span class="f-right">
+                                            $133
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-danger item-1 mr-1"></i>
+                                         Chicken Tikka Sub 12" (30 cm) x 1 
+                                        <span class="f-right">
+                                            $314
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-danger item-1 mr-1"></i>
+                                         Corn &amp; Peas Salad x 1 
+                                        <span class="f-right">
+                                            $209
+                                        </span>
+                                    </p>
+                                    </div>
+                                    <div class="border-top t-align-left p-4">
+                                        <p class="mb-0 font-xbold color-grey">
+                                            Sub Total 
+                                            <span class="f-right color-black">
+                                                $499
+                                            </span>
+                                        </p>
+                                        <small class="text-info">
+                                            Extra charges may apply
+                                        </small>
+                                    </div>
+                                    <div class="form-group col-md-12 mb-0 p-2">
+                                        <a href="checkout.html" class="btn-3">
+                                            Checkout
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="bg-black">
+            <div class="container">
+                <div class="row p-5 color-white t-align-center">
+                    <div class="row mx-0 my-3">
+                        <h1>Offers Near You</h1>
+                        <p class="mb-0 color-light-grey font-16 font-bold-500">
+                            Best deals at your favourite resturants
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-lg">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="row">
+                        <div class="col-8">
+                            <h3 class="font-xbold mt-0 mb-3">
+                                OFFERS
+                                <span class=" font-bold-500 font-16">
+                                    299 resturants
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-0 f-right">
+                                <a  id="dropdown" class="p-2 font-bold-500" href="#">
+                                    Sort by: 
+                                    <span>
+                                        Distance
+                                    </span>
+                                    <i class="icofont-caret-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-0 m-0">
+                        <div class="col-md-3">
+                            <div class="row p-0 m-0">
+                                <div class="row bg-white rounded m-all p-0 my-3 shadow-sm m-all">
+                                    <div class="row border-bottom mx-0 my-1 py-3">
+                                        <h6 class="m-0">
+                                            Filter By
+                                        </h6>
+                                    </div>
+                                    <div class="row border-bottom m-0 py-3">
+                                        <a href="#location" class="filter-tabs btn-link font-16 font-bold-500">
+                                            Location 
+                                            <i class="icofont-arrow-down f-right"></i>
+                                        </a>
+                                        <div id="location" class="row tab-content mt-3">
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Ludhiana Junction 
+                                                    <small class="color-grey">230</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Model Town 
+                                                    <small class="color-grey">95</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Civil Lines 
+                                                    <small class="color-grey">35</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Dugri 
+                                                    <small class="color-grey">46</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    PAU 
+                                                    <small class="color-grey">20</small>
+                                                </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <a href="#" class="color-orange font-bold-500">See all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row border-bottom m-0 py-3">
+                                        <a href="#cuisines" class="filter-tabs btn-link font-16 font-bold-500">
+                                            All Cuisines 
+                                            <i class="icofont-arrow-down f-right"></i>
+                                        </a>
+                                        <div id="cuisines" class="row tab-content">
+                                            <div id="search-filter" class="my-3">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <i class="icofont-search"></i>
+                                                        <input type="text" class="form-control" placeholder="Start typing to search...">
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    American 
+                                                    <small class="color-grey">156</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Pizza 
+                                                    <small class="color-grey">120</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Healthy 
+                                                    <small class="color-grey">130</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Vegeterian 
+                                                    <small class="color-grey">120</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Chinese 
+                                                    <small class="color-grey">111</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Hamburgers 
+                                                    <small class="color-grey">95</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Dessert 
+                                                    <small class="color-grey">50</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Chicken 
+                                                    <small class="color-grey">32</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Indian 
+                                                    <small class="color-grey">156</small>
+                                                </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <a href="#" class="color-orange font-bold-500">See all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row border-bottom m-0 py-3">
+                                        <a href="#feature" class="filter-tabs btn-link font-16 font-bold-500">
+                                            Feature 
+                                            <i class="icofont-arrow-down f-right"></i>
+                                        </a>
+                                        <div id="feature" class="row tab-content mt-3">
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Free Delivery 
+                                                    <small class="color-grey">156</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Coupons 
+                                                    <small class="color-grey">120</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Open Now [1:31am]
+                                                    <small class="color-grey">85</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row border-bottom m-0 py-3">
+                                        <a href="#delivery_time" class="filter-tabs btn-link font-16 font-bold-500">
+                                            Delivery time 
+                                            <i class="icofont-arrow-down f-right"></i>
+                                        </a>
+                                        <div id="delivery_time" class="row tab-content mt-3">
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Any Time 
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    25 min 
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    30 min 
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    40 min 
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    50 min 
+                                                </label>
+                                            </div>
+                                            <div class="mt-2">
+                                                <a href="#" class="color-orange font-bold-500">See all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row border-bottom m-0 py-3">
+                                        <a href="#category" class="filter-tabs btn-link font-16 font-bold-500">
+                                            Category 
+                                            <i class="icofont-arrow-down f-right"></i>
+                                        </a>
+                                        <div id="category" class="row tab-content mt-3">
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Delivery 
+                                                    <small class="color-grey">156</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Dine-out 
+                                                    <small class="color-grey">120</small>
+                                                </label>
+                                            </div>
+                                            <div class="custom-control py-1">
+                                                <input type="checkbox">
+                                                <label>
+                                                    Cafes
+                                                    <small class="color-grey">85</small>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row p-0 m-0 m-all">
+                                <div class="row bg-white rounded m-all p-0 my-3 shadow-sm m-all">
+                                    <div class="p-4">
+                                        <div class="pt-0">
+                                            <div class="custom-control">
+                                                <input type="radio">
+                                                <label>Gold Partner</label>
+                                            </div>
+                                            <div class="custom-control mt-1 mb-1">
+                                                <input type="radio" >
+                                                <label>Order Food Online</label>
+                                            </div>
+                                            <div class="custom-control">
+                                                <input type="radio" checked="">
+                                                <label>osahan</label>
+                                            </div>
+                                            <hr>
+                                            <small class="color-green">Use code OSAHAN50 to get 50% OFF (up to $30) on first 5 orders. T&amp;Cs apply.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row my-3 p-0 m-all">
+                                <div class="col-md-12">								
+                                    <div id="slide-1" class="owl-carousel">
+										<div class="category-item">
+											<a href="#">
+                                                <div class="row p-0">
+												    <img src="images/10.png" class="img-fluid">
+                                                </div>
+												<h6>Vegetarian</h6>
+												<p>412</p>
+											</a>
+										</div>
+                                        <div class="category-item">
+											<a href="#">
+												<div class="row p-0">
+												    <img src="images/11.png" class="img-fluid">
+                                                </div>
+												<h6>Chinese</h6>
+												<p>111</p>
+											</a>
+										</div>
+										<div class="category-item">
+											<a href="#">
+												<div class="row p-0">
+												    <img src="images/6.png" class="img-fluid">
+                                                </div>
+												<h6>HamBurgers</h6>
+												<p>176</p>
+											</a>
+										</div>
+										<div class="category-item">
+											<a href="#">
+												<div class="row p-0">
+												    <img src="images/12.png" class="img-fluid">
+                                                </div>
+												<h6>Chicken</h6>
+												<p>112</p>
+											</a>
+										</div>
+										<div class="category-item">
+											<a href="#">
+												<div class="row p-0">
+												    <img src="images/7.png" class="img-fluid">
+                                                </div>
+												<h6>Dessert</h6>
+												<p>746</p>
+											</a>
+										</div>
+										<div class="category-item">
+											<a href="#">
+												<div class="row p-0">
+												    <img src="images/13.png" class="img-fluid">
+                                                </div>
+												<h6>Indian</h6>
+												<p>149</p>
+											</a>
+										</div>
+										<div class="category-item">
+											<a href="#">
+												<div class="row p-0">
+												    <img src="images/1.png" class="img-fluid">
+                                                </div>
+												<h6>American</h6>
+												<p>235</p>
+											</a>
+										</div>
+										<div class="category-item">
+											<a href="#">
+												<div class="row p-0">
+												    <img src="images/2.png" class="img-fluid">
+                                                </div>
+												<h6>Pizza</h6>
+												<p>971</p>
+											</a>
+										</div>
+										<div class="category-item">
+											<a href="#">
+												<div class="row p-0">
+												    <img src="images/3.png" class="img-fluid">
+                                                </div>
+												<h6>Healthy</h6>
+												<p>349</p>
+											</a>
+										</div>
+									</div>
+                                </div>
+                            </div>
+                            <div class="row my-3 m-all">
+                                <div class="row m-0 p-0">
+                                    <div class="col-md-4">
+                                        <div class="f-category mx-0 my-3">
+                                            <a href="#">
+                                                <img src="images/1.png" class="m-0 p-0 f-category-img">
+                                                <div class="row">
+                                                    <h6 class="mb-1">World Famous</h6>
+                                                    <p class="mb-3">North Indian • American • Pure veg</p>
+                                                    <div class="mb-3">
+                                                        <span class="bg-light text-dark rounded-sm py-1 px-2" style="display:inline;">
+                                                            <i class="icofont-wall-clock"></i>
+                                                            20–25 min
+                                                        </span>
+                                                        <span class="f-right">
+                                                            $350 FOR TWO
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="success-badge">
+                                                            OFFER
+                                                        </span>
+                                                        <small class="margin-left-5">65% off | Use Coupon OSAHAN50</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="f-category mx-0 my-3">
+                                            <a href="#">
+                                                <img src="images/2.png" class="m-0 p-0 f-category-img">
+                                                <div class="row">
+                                                    <h6 class="mb-1">Famous Food</h6>
+                                                    <p class="mb-3">North Indian • Indian • Pure veg</p>
+                                                    <div class="mb-3">
+                                                        <span class="bg-light text-dark rounded-sm py-1 px-2" style="display:inline;">
+                                                            <i class="icofont-wall-clock"></i>
+                                                            15–25 min
+                                                        </span>
+                                                        <span class="f-right">
+                                                            $250 FOR TWO
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="danger-badge">
+                                                            OFFER
+                                                        </span>
+                                                        <small class="margin-left-5">65% off | Use Coupon OSAHAN50</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="f-category mx-0 my-3">
+                                            <a href="#">
+                                                <img src="images/3.png" class="m-0 p-0 f-category-img">
+                                                <div class="row">
+                                                    <h6 class="mb-1">Bite Me SandWiches</h6>
+                                                    <p class="mb-3">North Indian • Indian • Pure veg</p>
+                                                    <div class="mb-3">
+                                                        <span class="bg-light text-dark rounded-sm py-1 px-2" style="display:inline;">
+                                                            <i class="icofont-wall-clock"></i>
+                                                            15–25 min
+                                                        </span>
+                                                        <span class="f-right">
+                                                            $100 FOR TWO
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="danger-badge">
+                                                            OFFER
+                                                        </span>
+                                                        <small class="margin-left-5">65% off | Use Coupon OSAHAN50</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row p-0 m-0">
+                                    <div class="col-md-4">
+                                        <div class="f-category mx-0 my-3">
+                                            <a href="#">
+                                                <img src="images/10.png" class="m-0 p-0 f-category-img">
+                                                <div class="row">
+                                                    <h6 class="mb-1">Famous Dave's Bar-B-Que</h6>
+                                                    <p class="mb-3">Vegetarian • Indian • Pure veg</p>
+                                                    <div class="mb-3">
+                                                        <span class="bg-light text-dark rounded-sm py-1 px-2" style="display:inline;">
+                                                            <i class="icofont-wall-clock"></i>
+                                                            15–25 min
+                                                        </span>
+                                                        <span class="f-right">
+                                                            $350 FOR TWO
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="danger-badge">
+                                                            OFFER
+                                                        </span>
+                                                        <small class="margin-left-5">65% off | Use Coupon OSAHAN50</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="f-category mx-0 my-3">
+                                            <a href="#">
+                                                <img src="images/11.png" class="m-0 p-0 f-category-img">
+                                                <div class="row">
+                                                    <h6 class="mb-1">Thai Famous Cuisine</h6>
+                                                    <p class="mb-3">North Indian • Indian • Pure veg</p>
+                                                    <div class="mb-3">
+                                                        <span class="bg-light text-dark rounded-sm py-1 px-2" style="display:inline;">
+                                                            <i class="icofont-wall-clock"></i>
+                                                            30–35 min
+                                                        </span>
+                                                        <span class="f-right">
+                                                            $250 FOR TWO
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="success-badge">
+                                                            OFFER
+                                                        </span>
+                                                        <small class="margin-left-5">65% off | Use Coupon OSAHAN50</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="f-category mx-0 my-3">
+                                            <a href="#">
+                                                <img src="images/6.png" class="m-0 p-0 f-category-img">
+                                                <div class="row">
+                                                    <h6 class="mb-1">The osahan Resturant</h6>
+                                                    <p class="mb-3">North • Hamburgers • Pure veg</p>
+                                                    <div class="mb-3">
+                                                        <span class="bg-light text-dark rounded-sm py-1 px-2" style="display:inline;">
+                                                            <i class="icofont-wall-clock"></i>
+                                                            15–25 min
+                                                        </span>
+                                                        <span class="f-right">
+                                                            $500 FOR TWO
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="danger-badge">
+                                                            OFFER
+                                                        </span>
+                                                        <small class="margin-left-5">65% off | Use Coupon OSAHAN50</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row p-0 m-0">
+                                    <div class="col-md-4">
+                                        <div class="f-category mx-0 my-3">
+                                            <a href="#">
+                                                <img src="images/7.png" class="m-0 p-0 f-category-img">
+                                                <div class="row">
+                                                    <h6 class="mb-1">Stan's Resturant</h6>
+                                                    <p class="mb-3">North Indian • Indian • Pure veg</p>
+                                                    <div class="mb-3">
+                                                        <span class="bg-light text-dark rounded-sm py-1 px-2" style="display:inline;">
+                                                            <i class="icofont-wall-clock"></i>
+                                                            15–25 min
+                                                        </span>
+                                                        <span class="f-right">
+                                                            $350 FOR TWO
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="danger-badge">
+                                                            OFFER
+                                                        </span>
+                                                        <small class="margin-left-5">65% off | Use Coupon OSAHAN50</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="f-category mx-0 my-3">
+                                            <a href="#">
+                                                <img src="images/12.png" class="m-0 p-0 f-category-img">
+                                                <div class="row">
+                                                    <h6 class="mb-1">Polo Lounge</h6>
+                                                    <p class="mb-3">North Indian • Indian • Pure veg</p>
+                                                    <div class="mb-3">
+                                                        <span class="bg-light text-dark rounded-sm py-1 px-2" style="display:inline;">
+                                                            <i class="icofont-wall-clock"></i>
+                                                            15–25 min
+                                                        </span>
+                                                        <span class="f-right">
+                                                            $350 FOR TWO
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="danger-badge">
+                                                            OFFER
+                                                        </span>
+                                                        <small class="margin-left-5">65% off | Use Coupon OSAHAN50</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="f-category mx-0 my-3">
+                                            <a href="#">
+                                                <img src="images/9.png" class="m-0 p-0 f-category-img">
+                                                <div class="row">
+                                                    <h6 class="mb-1">Jack's Fry</h6>
+                                                    <p class="mb-3">North Indian • Indian • Pure veg</p>
+                                                    <div class="mb-3">
+                                                        <span class="bg-light text-dark rounded-sm py-1 px-2" style="display:inline;">
+                                                            <i class="icofont-wall-clock"></i>
+                                                            15–25 min
+                                                        </span>
+                                                        <span class="f-right">
+                                                            $350 FOR TWO
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <span class="danger-badge">
+                                                            OFFER
+                                                        </span>
+                                                        <small class="margin-left-5">65% off | Use Coupon OSAHAN50</small>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 m-3">
+                                    <button class="btn-1" type="button">
+                                        <span class="spinner-grow spinner-grow-sm"></span>
+                                        Loading...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 t-align-center bg-white">
+            <div class="container">
+                <div class="row">
+                    <h5 class="m-0">
+                        Operate food store or restaurants?
+                        <a href="#" class="color-orange">
+                            Work With Us
+                        </a>
+                    </h5>
+                </div>
+            </div>
+        </section>
+        <section class="bg-lg py-5">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="col-md-5 mb-5">
+                        <h6 class="mb-3">
+                            Subscribe to our Newsletter
+                        </h6>
+                        <div class="row">
+                             <form action="#" class="mb-1" id="sub-form">
+                                <input type="text" placeholder="Please enter your email" id="c-form">
+                                <button type="button" class="btn-2">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                        <p class="mt-5">
+                            <a href="#" class="color-blue">
+                                Register now
+                            </a>
+                             to get updates on 
+                            <a href="#" class="color-orange">
+                                Offers and Coupons
+                            </a>
+                        </p>
+                        <div class="col-12">
+                            <p class="mb-2">DOWNLOAD APP</p>
+                            <a href="#">
+                                <img class="img-fluid" src="images/google.png">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="images/apple.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <div class="row">
+                            <h6 class="mb-3">About OE</h6>
+                            <ul class="list-unstyled">
+                                <li class="py-1">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Culture</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <div class="row">
+                            <h6 class="mb-3">For Foodies</h6>
+                            <ul class="list-unstyled">
+                                <li class="py-1">
+                                    <a href="#">Community</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Developers</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Blogger Help</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Verified Users</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Code of Conduct</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <h6 class="mb-3">For Restaurants</h6>
+                        <ul class="list-unstyled">
+                            <li class="py-1">
+                                <a href="#">Advertise</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">Add a Restaurant</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">Claim your Listing</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">For Businesses</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">Owner Guidelines</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-black">POPULAR COUNTRIES</p>
+                        <div class="links">
+                            <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a> | <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a> <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a> | <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a>
+                        </div>
+                        <p class="mt-4 text-black">POPULAR FOOD</p>
+                        <div class="links">
+                            <a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a> | <a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a><a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a> | <a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-4 t-align-center bg-lg">
+            <div class="container">
+                <div class="row">
+                    <p class="my-0">© Copyright 2019 Food Line. All Rights Reserved</p>
+                    <small class="my-0">
+                        Made with 
+                        <i class="fas fa-heart heart-icon text-danger"></i>
+                        by
+                        <a class="text-danger" href="#">Gurdeep Osahan</a>
+                         - 
+                        <a class="text-primary" target="_blank" href="#">
+                            Ask Bootstrap
+                        </a>
+                    </small>
+                </div>
+            </div>
+        </footer>
+
+        <script src="owlcarousel/jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

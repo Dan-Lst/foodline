@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Food Line - Mofdal Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="icofont/icofont.min.css" rel="stylesheet">
+        <link href="fontawesome/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+		<style>
+			.modal{
+				display:none;
+				width:100%;
+				height:100%;
+				position:fixed;
+				z-index:1;
+				left:0;
+				top:0;
+				overflow:auto; 
+				background-color:rgb(0,0,0);
+				background-color:rgba(0,0,0,0.4);
+			}
+
+			.modal-content{
+				background-color:#fefefe;
+				margin:4% auto; 
+				padding:15px 0px;
+				border:1px solid #888;
+				width:40%;
+			}
+
+			.close{
+				margin:0px;
+				color:rgb(148, 128, 128);
+				float:right;
+				font-size:25px;
+				font-weight:bold;
+			}
+
+			.close:hover, .close:focus{
+				color:rgb(87, 70, 70);
+				text-decoration:none;
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div class="container">
+				<div class="row">
+					<button id="myBtn">Open Modal</button>
+
+					<div id="myModal" class="modal">
+						<div class="modal-content">
+							<div class="row px-3 py-0">
+								<h5 class="mb-0">
+									Add Delivery Address
+									<span class="close">&times;</span>
+								</h5>
+							</div>
+							<hr>
+							<div class="form-group col-md-12 px-3 py-1">
+								<label class="mb-2">Delivery Area</label>
+								<form class="mb-3">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Delivery Area" class="form-control">
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn-form-modal">
+                                                <i class="icofont-ui-pointer"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+							</div>
+							<div class="form-group col-md-12 px-3 py-1">
+								<label class="mb-2">Complete Address</label>
+								<form class="mb-3">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Complete Address e.g. house number, street name, landmark" class="form-control form-control-p10">
+                                    </div>
+                                </form>
+							</div>
+							<div class="form-group col-md-12 px-3 py-1">
+								<label class="mb-2">Delivery Instructions</label>
+								<form class="mb-3">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Delivery Instructions e.g. Opposite Gold Souk Mall" class="form-control form-control-p10">
+                                    </div>
+                                </form>
+							</div>
+							<div class="form-group col-md-12 px-3 py-1">
+								<label class="mb-2">Nickname</label>
+								<div class="row px-2">
+									<div class="col-4 p-0">
+										<a class="modal-btn-active">
+											Home
+										</a>
+									</div>
+									<div class="col-4 p-0">
+										<a class="modal-option-btn">
+											Work
+										</a>
+									</div>
+									<div class="col-4 p-0">
+										<a class="modal-option-btn">
+											Other
+										</a>
+									</div>
+								</div>						
+							</div>
+							<hr>
+							<div class="form-group col-md-12 px-3 py-1">
+								<div class="row px-2">
+									<div class="col-6 p-0 m-0">
+										<button type="button" id="cancel-btn" class="btn-modal-orange-border">
+											CANCEL
+										</button>
+									</div>
+									<div class="col-6 p-0 m-0">
+										<button type="button" class="btn-modal-orange">
+											SUBMIT
+										</button>
+									</div>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script>
+		let modal = document.querySelector("#myModal");
+		let btn = document.querySelector("#myBtn");
+		let span = document.querySelectorAll(".close")[0];
+		let cancel_btn = document.querySelector("#cancel-btn");
+
+		btn.addEventListener("click", function(){
+			modal.style.display = "block";
+		});
+
+		span.addEventListener("click", function(){
+			modal.style.display = "none";
+		});
+
+		cancel_btn.addEventListener("click", function(){
+			modal.style.display = "none";
+		});
+
+		window.addEventListener("click", function(event){
+			if(event.target == modal){
+				modal.style.display = "none";
+			}
+		});
+	</script>
+</html>

@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Line - Online Food Ordering Website HTML Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="icofont/icofont.min.css" rel="stylesheet">
+        <link href="fontawesome/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    </head>
+    <body>
+        <nav class="navbar bg-white shadow-sm py-3">
+            <div class="container px-2">
+                <div class="row py-1 width-100">
+                    <div class="col-md-3">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="images/logo.png">
+                        </a>
+                        <div class="navbar-toggler">
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <ul id="list">
+                            <li>
+                                <a href="index.html" class="active">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="offers.html">
+                                    <i class="icofont-sale-discount"></i>
+                                    Offers
+                                    <span class="danger-badge">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-dropdown">
+								<a class="tab-links" href="#resturants-menu">
+									Resturants
+                                    <i class="icofont-caret-down"></i>
+								</a>
+								<ul id="resturants-menu" class="list-menu py-1">
+									<li>
+										<a href="listing.html">Listing</a>
+									</li>
+									<li>
+										<a href="detail.html">Detail + Cart</a>
+									</li>
+									<li>
+										<a href="checkout.html">Checkout</a>
+									</li>
+								</ul>
+							</li>
+                            <li class="menu-dropdown">
+								<a class="tab-links" href="#pages-menu">
+                                    Pages
+                                    <i class="icofont-caret-down"></i>
+								</a>
+								<ul id="pages-menu" class="list-menu py-1">
+									<li>
+										<a href="track-order.html">Track Order</a>
+									</li>
+									<li>
+										<a href="invoice.html">Invoice</a>
+									</li>
+									<li>
+										<a href="login.html">Login</a>
+									</li>
+                                    <li>
+										<a href="register.html">Register</a>
+									</li>
+                                    <li>
+										<a href="#">404</a>
+									</li>
+                                    <li>
+										<a href="#">Extra :)</a>
+									</li>
+								</ul>
+							</li>
+                            <li class="menu-dropdown">
+								<a class="tab-links" href="#account-list">
+                                    <img src="images/4.png" id="account-pic">
+                                    My Account
+                                    <i class="icofont-caret-down"></i>
+								</a>
+								<ul id="account-list" class="list-menu py-1">
+									<li>
+										<a href="orders.html#orders">
+                                            <i class="icofont-food-cart"></i>
+                                            Orders
+                                        </a>
+									</li>
+									<li>
+										<a href="orders.html#offers">
+                                            <i class="icofont-sale-discount"></i>
+                                            Offers
+                                        </a>
+									</li>
+									<li>
+										<a href="orders.html#favourites">
+                                            <i class="icofont-heart"></i>
+                                            Favourites
+                                        </a>
+									</li>
+                                    <li>
+										<a href="orders.html#payments">
+                                            <i class="icofont-credit-card"></i>
+                                            Payments
+                                        </a>
+									</li>
+                                    <li>
+										<a href="orders.html#addresses">
+                                            <i class="icofont-location-pin"></i>
+                                            Addresses
+                                        </a>
+									</li>
+								</ul>
+							</li>
+                            <li class="menu-dropdown">
+                                <a id="btn-modal" href="#">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    Cart
+                                    <span class="success-badge">
+                                        5
+                                    </span>
+                                    <i class="icofont-caret-down"></i>
+                                </a>
+                                <div id="list-modal" class="shadow-sm border-0 tab-content">
+                                    <div class="row p-4">
+                                        <div class="col-3 p-0 m-0">
+                                            <img id="cart-img" class="p-1" src="images/1.jpg">
+                                        </div>
+                                        <div class="col-9 t-align-left py-0 px-1 m-0">
+                                            <h6 class="color-black mb-0 font-xbold font-12">
+                                                Gus's World Famous Chicken
+                                            </h6>
+                                            <p class="color-grey mb-0 mt-1 font-11">
+                                                310 S Front St, Memphis, USA
+                                            </p>
+                                            <small>
+                                                <a class="color-orange font-xbold" href="#">
+                                                    View Full Menu
+                                                </a>
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="t-align-left border-top p-4">
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-danger item-1 mr-1"></i>
+                                         Chicken Tikka Sub 12" (30 cm) x 1 
+                                        <span class="f-right">
+                                             $314
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-success item-2 mr-1"></i>
+                                         Corn &amp; Peas Salad x 1 
+                                        <span class="f-right">
+                                            $209
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-success item-2 mr-1"></i>
+                                         Veg Seekh Sub 6" (15 cm) x 1 
+                                        <span class="f-right">
+                                            $133
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-danger item-1 mr-1"></i>
+                                         Chicken Tikka Sub 12" (30 cm) x 1 
+                                        <span class="f-right">
+                                            $314
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-danger item-1 mr-1"></i>
+                                         Corn &amp; Peas Salad x 1 
+                                        <span class="f-right">
+                                            $209
+                                        </span>
+                                    </p>
+                                    </div>
+                                    <div class="border-top t-align-left p-4">
+                                        <p class="mb-0 font-xbold color-grey">
+                                            Sub Total 
+                                            <span class="f-right color-black">
+                                                $499
+                                            </span>
+                                        </p>
+                                        <small class="text-info">
+                                            Extra charges may apply
+                                        </small>
+                                    </div>
+                                    <div class="form-group col-md-12 mb-0 p-2">
+                                        <a href="checkout.html" class="btn-3">
+                                            Checkout
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="eatery-profile-slide-area">
+            <div id="slide-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="relative-parent">
+                            <div id="eatery-header">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="row t-align">
+                                            <div class="col-md-2">
+                                                <img src="images/1.jpg" class="img-fluid" id="img-header">
+                                            </div>
+                                            <div class="col-md-10 p-0">
+                                                <h2 class="text-white">
+                                                    Spice Hut Indian Resturant
+                                                </h2>
+                                                <p class="text-white mb-1">
+                                                    <i class="icofont-location-pin"></i>
+                                                    2036 2ND AVE, NEW YORK, NY 10029 
+                                                    <span class="success-badge">OPEN</span>
+                                                </p>
+                                                <p class="text-white mb-0">
+                                                    <i class="icofont-food-cart"></i>
+                                                    North Indian, Chinese, Fast Food, South Indian
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div id="eatery-profile-slide-rating-box">
+                                            <a href="#" class="t-btn mb-3 t-align-center">
+                                                <i class="icofont-clock-time"></i>
+                                                20-35 min
+                                            </a>
+                                            <h6 class="text-white mt-4 mb-0 pb-0">
+                                                <span id="gradient-bg" class="rounded text-white" style="margin-right:9px;">
+                                                    <i class="icofont-star"></i>
+                                                    3.1
+                                                </span>
+                                                23 Ratings 
+                                                <i class="icofont-speech-comments" style="margin-left:12px;"></i>
+                                                91 reviews
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white rounded shadow-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 order-md-2">
+                        <div class="row alt-menu-bg pt-3 pb-0">
+                            <button class="alt-menu">
+                                <i class="icofont-heart text-danger" style="margin-right:3px;"></i>
+                                Mark as Favourite
+                            </button>
+                            <button class="alt-menu">
+                                <i class="icofont-cauli-flower text-success"></i>
+                                Pure Veg
+                            </button>
+                            <button class="alt-menu-danger">
+                                <i class="icofont-sale-discount"></i>
+                                OFFERS
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-8 order-md-1">
+                        <div class="row pt-3 pb-0 px-0">
+                            <ul class="list-unstyled" id="menu">
+                                <li class="pt-2 active-tab">
+                                    <a href="#order-online" class="eatery-h-tabs">
+                                        Order Online
+                                        <span></span>
+                                    </a>                       
+                                </li>
+                                <li class="pt-2">
+                                    <a href="#gallery" class="eatery-h-tabs">
+                                        Gallery
+                                        <span></span>
+                                    </a>                       
+                                </li>
+                                <li class="pt-2">
+                                    <a href="#restaurant-info" class="eatery-h-tabs">
+                                        Resturant Info
+                                        <span></span>
+                                    </a>                       
+                                </li>
+                                <li class="pt-2">
+                                    <a href="#book-table" class="eatery-h-tabs">
+                                        Book a Table
+                                        <span></span>
+                                    </a>                       
+                                </li>
+                                <li class="pt-2">
+                                    <a href="#ratings-and-reviews" class="eatery-h-tabs">
+                                        Ratings &amp; Reviews
+                                        <span></span>
+                                    </a>                       
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-lg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="order-online" class="row p-0 m-0 tab-content active-tab-content">
+                            <div class="row bg-white p-4 my-5 m-all rounded shadow-sm">
+                                <h5 class="mb-4">Recommended</h5>
+                                <form class="mb-4">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Search for dishes..." class="form-control">
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn">
+                                                <i class="icofont-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <h6 class="mb-3">
+                                    Most Popular 
+                                    <span class="success-badge">
+                                        <i class="icofont-tags"></i> 
+                                        15% Off All Items 
+                                    </span>
+                                </h6>
+                                <div class="row">
+                                    <div class="col-md-12">								
+                                        <div id="slide-4" class="owl-carousel">
+                                            <div class="slide-item">
+                                                <a href="#">
+                                                    <img src="images/2.png" class="img-fluid">
+                                                    <h6>SandWiches</h6>
+                                                    <p>8 ITEMS</p>
+                                                </a>
+                                            </div>
+                                            <div class="slide-item">
+                                                <a href="#">
+                                                    <img src="images/3.png" class="img-fluid">
+                                                    <h6>Soups</h6>
+                                                    <p>2 ITEMS</p>
+                                                </a>
+                                            </div>
+                                            <div class="slide-item">
+                                                <a href="#">
+                                                    <img src="images/10.png" class="img-fluid">
+                                                    <h6>Pizza</h6>
+                                                    <p>56 ITEMS</p>
+                                                </a>
+                                            </div>
+                                            <div class="slide-item">
+                                                <a href="#">
+                                                    <img src="images/11.png" class="img-fluid">
+                                                    <h6>Pastas</h6>
+                                                    <p>10 ITEMS</p>
+                                                </a>
+                                            </div>
+                                            <div class="slide-item">
+                                                <a href="#">
+                                                    <img src="images/6.png" class="img-fluid">
+                                                    <h6>Chinese</h6>
+                                                    <p>25 ITEMS</p>
+                                                </a>
+                                            </div>
+                                            <div class="slide-item">
+                                                <a href="#">
+                                                    <img src="images/1.png" class="img-fluid">
+                                                    <h6>Burgers</h6>
+                                                    <p>5 ITEMS</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3 m-all">
+                                <h5 class="p-0 mb-3">Best Sellers</h5>
+                                <div class="row p-0">
+                                    <div class="col-md-4 p-auto">
+                                        <div class="best-sellers-category m-2">
+                                            <a href="#">
+                                                <img src="images/7.png" class="m-0 p-0">
+                                                <div class="row">
+                                                    <h6 class="mb-1">Bite Me Sandwiches</h6>
+                                                    <p class="mb-3">North Indian • Indian</p>
+                                                    <p class="mb-0">
+                                                        <span style="margin-right:5px;">$550</span>
+                                                        <span class="success-badge">
+                                                            NEW
+                                                        </span>
+                                                        <span id="add">ADD</span>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 p-auto">
+                                        <div class="best-sellers-category m-2">
+                                            <a href="#">
+                                                <img src="images/12.png" class="m-0 p-0">
+                                                <div class="row">
+                                                    <h6 class="mb-1">Famous Dave's Bar B</h6>
+                                                    <p class="mb-3">Hamburgers • Indian</p>
+                                                    <p class="mb-0">
+                                                        <span style="margin-right:5px;">$250</span>
+                                                        <span class="success-badge" style="background-color:#1877F2 !important; border-color:#1877F2 !important;">
+                                                            NEW
+                                                        </span>
+                                                        <span id="count-numbers" class="p-0">
+                                                            <button class="count-btn px-1">
+                                                                <i class="icofont-minus"></i>
+                                                            </button>
+                                                            <b class="unit-count">1</b>
+                                                            <button class="count-btn px-1">
+                                                                <i class="icofont-plus"></i>
+                                                            </button>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 p-auto">
+                                        <div class="best-sellers-category m-2">
+                                            <a href="#">
+                                                <img src="images/13.png" class="m-0 p-0">
+                                                <div class="row">
+                                                    <h6 class="mb-1">Bite Me Sandwiches</h6>
+                                                    <p class="mb-3">North Indian • Indian</p>
+                                                    <p class="mb-0">
+                                                        <span style="margin-right:5px;">$250</span>
+                                                        <span class="success-badge" style="background-color:lightseagreen !important; border-color:lightseagreen !important;">
+                                                            NEW
+                                                        </span>
+                                                        <span id="add">ADD</span>
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3 m-all">
+                                <h5 class="p-0 mb-3">
+                                    Quick Bites
+                                    <span style="color:grey; font-size:15px;">
+                                        3 ITEMS
+                                    </span>
+                                </h5>
+                                <div class="col-md-12 bg-white mb-5 rounded shadow-sm">
+                                    <div class="row p-3 border-bottom">
+                                        <i class="icofont-ui-press text-danger item-1"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">Chicken Tikka Sub</h6>
+                                                <p class="color-grey mb-0">$314 - 12" (30 cm)</p>
+                                            </div>
+                                            <span id="add" class="col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">ADD</span>
+                                        </div>
+                                    </div>
+                                    <div class="row p-3 border-bottom">
+                                        <i class="icofont-ui-press text-danger item-1"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">
+                                                    Cheese corn Roll
+                                                    <span class="danger-badge">BESTSELLER</span>
+                                                </h6>
+                                                <p class="color-grey mb-0">$600</p>
+                                            </div>
+                                            <span id="count-numbers" class="p-0 col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-minus"></i>
+                                                </button>
+                                                <b class="unit-count">1</b>
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-plus"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <i class="icofont-ui-press text-success item-2"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">
+                                                    Cheese Spinach corn Roll
+                                                    <span class="success-badge">Pure Veg</span>
+                                                </h6>
+                                                <p class="color-grey mb-0">$600</p>
+                                            </div>
+                                            <span id="count-numbers" class="p-0 col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-minus"></i>
+                                                </button>
+                                                <b class="unit-count">1</b>
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-plus"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3 m-all">
+                                <h5 class="p-0 mb-3">
+                                    Starters
+                                    <span style="color:grey; font-size:15px;">
+                                        3 ITEMS
+                                    </span>
+                                </h5>
+                                <div class="col-md-12 bg-white mb-5 rounded shadow-sm">
+                                    <div class="row p-3 border-bottom">
+                                        <i class="icofont-ui-press text-danger item-1"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">Veg Spring Roll</h6>
+                                                <p class="color-grey mb-0">$314 - 12" (30 cm)</p>
+                                            </div>
+                                            <span id="count-numbers" class="p-0 col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-minus"></i>
+                                                </button>
+                                                <b class="unit-count">1</b>
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-plus"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row p-3 border-bottom">
+                                        <i class="icofont-ui-press text-danger item-1"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">
+                                                    Stuffed Mushroom
+                                                    <span class="danger-badge">BESTSELLER</span>
+                                                </h6>
+                                                <p class="color-grey mb-0">$600</p>
+                                            </div>
+                                            <span id="count-numbers" class="p-0 col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-minus"></i>
+                                                </button>
+                                                <b class="unit-count">1</b>
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-plus"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <i class="icofont-ui-press text-success item-2"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">
+                                                    Honey Chilli Potato
+                                                    <span class="success-badge">Pure Veg</span>
+                                                </h6>
+                                                <p class="color-grey mb-0">$600</p>
+                                            </div>
+                                            <span id="count-numbers" class="p-0 col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-minus"></i>
+                                                </button>
+                                                <b class="unit-count">1</b>
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-plus"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3 m-all">
+                                <h5 class="p-0 mb-3">
+                                    Soups
+                                    <span style="color:grey; font-size:15px;">
+                                        8 ITEMS
+                                    </span>
+                                </h5>
+                                <div class="col-md-12 bg-white mb-5 rounded shadow-sm">
+                                    <div class="row p-3 border-bottom">
+                                        <i class="icofont-ui-press text-danger item-1"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">Tomato Dhania Shorba</h6>
+                                                <p class="color-grey mb-0">$314 - 12" (30 cm)</p>
+                                            </div>
+                                            <span id="add" class="col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">ADD</span>
+                                        </div>
+                                    </div>
+                                    <div class="row p-3 border-bottom">
+                                        <i class="icofont-ui-press text-danger item-1"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">Veg Manchow Soup</h6>
+                                                <p class="color-grey mb-0">$600</p>
+                                            </div>
+                                            <span id="add" class="col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">ADD</span>
+                                        </div>
+                                    </div>
+                                    <div class="row p-3 border-bottom">
+                                        <i class="icofont-ui-press text-success item-2"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">
+                                                    Lemon Coriander Soup
+                                                </h6>
+                                                <p class="color-grey mb-0">$600</p>
+                                            </div>
+                                            <span id="count-numbers" class="p-0 col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-minus"></i>
+                                                </button>
+                                                <b class="unit-count">1</b>
+                                                <button class="count-btn px-1">
+                                                    <i class="icofont-plus"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row p-3 border-bottom">
+                                        <i class="icofont-ui-press text-danger item-1"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">Tomato Dhania Shorba</h6>
+                                                <p class="color-grey mb-0">$314 - 12" (30 cm)</p>
+                                            </div>
+                                            <span id="add" class="col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">ADD</span>
+                                        </div>
+                                    </div>
+                                    <div class="row p-3 border-bottom">
+                                        <i class="icofont-ui-press text-danger item-1"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">Veg Manchow Soup</h6>
+                                                <p class="color-grey mb-0">$600</p>
+                                            </div>
+                                            <span id="add" class="col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">ADD</span>
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <i class="icofont-ui-press text-success item-2"></i>
+                                        <div class="row">
+                                            <div class="col-9">
+                                                <h6 class="mb-1">
+                                                    Lemon Coriander Soup
+                                                </h6>
+                                                <p class="color-grey mb-0">$600</p>
+                                            </div>
+                                            <span id="add" class="col-auto" style="margin-top:auto; margin-bottom:auto; margin-left:auto;">ADD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="gallery" class="row p-0 m-0 tab-content">
+                            <div class="row bg-white py-4 px-2 my-5 m-all rounded shadow-sm">
+                                <div id="slide-5" class="owl-carousel">
+                                    <div class="item">
+                                        <a href="#">
+                                            <img src="images/14.png" class="img-fluid rounded">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#">
+                                            <img src="images/15.png" class="img-fluid rounded">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#">
+                                            <img src="images/16.png" class="img-fluid rounded">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="restaurant-info" class="row p-0 m-0 tab-content">
+                            <div class="row bg-white rounded m-all shadow-sm p-4 my-5">
+                                <div class="row p-0 mx-0 mt-2">
+                                    <div class="col-md-6 order-md-2 mb-2">
+                                        <iframe style="width:100%;" height="170" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    </div>
+                                    <div class="col-md-6 order-md-1">
+                                        <h5 class="mb-4">Restaurant Info</h5>
+                                        <p class="mb-3">
+                                            Jagjit Nagar, Near Railway Crossing,
+                                            <br> Near Model Town, Ludhiana, PUNJAB
+                                        </p>
+                                        <p class="mb-2 text-black">
+                                            <i class="icofont-phone-circle color-orange" style="margin-right:4px;"></i>
+                                                +91 01234-56789, +91 01234-56789
+                                        </p>
+                                        <p class="mb-2 text-black">
+                                            <i class="icofont-email color-orange" style="margin-right:4px;"></i>
+                                                iamosahan@gmail.com, osahaneat@gmail.com
+                                        </p>
+                                        <p class="mb-3 text-black">
+                                            <i class="icofont-clock-time color-orange" style="margin-right:4px;"></i>
+                                                Today 11am – 5pm, 6pm – 11pm
+                                            <span class="success-badge"> OPEN NOW </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <p class="text-black mb-3">
+                                    You can also check the 3D view by using our menue map clicking here &nbsp;&nbsp;&nbsp; 
+                                    <a class="font-xbold" href="#" style="color:mediumaquamarine;">Venue Map</a>
+                                </p>
+                                <hr>
+                                <h5 class="mt-2 mb-3">More Info</h5>
+                                <p class="mb-3">
+                                    Dal Makhani, Panneer Butter Masala, Kadhai Paneer, Raita, Veg Thali, Laccha Paratha, Butter Naan
+                                </p>
+                                <div class="p-1 mb-2">
+                                    <a class="border-btn text-success" href="#">
+                                        <i class="icofont-check-circled"></i>
+                                         Breakfast
+                                    </a>
+                                    <a class="border-btn text-danger mr-2" href="#">
+                                        <i class="icofont-close-circled"></i>
+                                         No Alcohol Available
+                                    </a>
+                                    <a class="border-btn text-success" href="#">
+                                        <i class="icofont-check-circled"></i>
+                                         Vegetarian Only</a>
+                                    <a class="border-btn text-success" href="#">
+                                        <i class="icofont-check-circled"></i>
+                                         Indoor Seating
+                                    </a>
+                                    <a class="border-btn text-success" href="#">
+                                        <i class="icofont-check-circled"></i>
+                                         Breakfast
+                                    </a>
+                                    <a class="border-btn text-danger" href="#">
+                                        <i class="icofont-close-circled"></i>
+                                         No Alcohol Available
+                                        </a>
+                                    <a class="border-btn text-success" href="#">
+                                        <i class="icofont-check-circled"></i>
+                                         Vegetarian Only
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="book-table" class="row p-0 m-0 tab-content">
+                            <div class="row bg-white rounded m-all shadow-sm p-4 my-5">
+                                <h5 class="mb-4">Book A Table</h5>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Full Name</label>
+                                                <input class="form-control my-3" type="text" placeholder="Enter Full Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Email Address</label>
+                                                <input class="form-control my-3" type="text" placeholder="Enter Email address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Mobile number</label>
+                                                <input class="form-control my-3" type="text" placeholder="Enter Mobile number">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Date And Time</label>
+                                                <input class="form-control my-3" type="text" placeholder="Enter Date And Time">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group f-right">
+                                        <button class="btn-orange mt-1" style="padding:7px 12px;" type="button">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="ratings-and-reviews" class="row p-0 m-0 tab-content">
+                            <div class="row bg-white rounded m-all shadow-sm p-4 mt-5 mb-4">
+                                <h5 class="m-0 p-0 col-auto">
+                                    Rate this Place
+                                </h5>
+                                <span class="star-rating px-0" style="margin-left:auto;">
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="row bg-white rounded m-all shadow-sm p-4 mb-4">
+                                <h5 class="mx-0 mb-4 p-0">
+                                    Ratings &amp; Reviews
+                                </h5>
+                                <span class="star-rating mx-0 mb-2 px-0" style="font-size:8px;">
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <b class="px-2 col-auto" style="font-size:17px;">344</b>
+                                </span>
+                                <p class="p-0">
+                                    Rated 3.5 out of 5
+                                </p>
+                                <div class="row my-2 mx-0 p-0">
+                                    <div class="star-listing-left p-0">
+                                        <h6 class="py-2 font-13">5 Star</h6>
+                                    </div>
+                                    <div class="star-listing-center p-0">
+                                        <div style="width:56%;"></div>
+                                    </div>
+                                    <div class="star-listing-right p-0 t-align-right">
+                                        <h6 class="my-0 py-2 font-13">56%</h6>
+                                    </div>
+                                </div>
+                                <div class="row my-2 mx-0 p-0">
+                                    <div class="star-listing-left p-0">
+                                        <h6 class="py-2 font-13">4 Star</h6>
+                                    </div>
+                                    <div class="star-listing-center p-0">
+                                        <div style="width:23%;"></div>
+                                    </div>
+                                    <div class="star-listing-right p-0 t-align-right">
+                                        <h6 class="my-0 py-2 font-13">23%</h6>
+                                    </div>
+                                </div>
+                                <div class="row my-2 mx-0 p-0">
+                                    <div class="star-listing-left p-0">
+                                        <h6 class="py-2 font-13">3 Star</h6>
+                                    </div>
+                                    <div class="star-listing-center p-0">
+                                        <div style="width:11%;"></div>
+                                    </div>
+                                    <div class="star-listing-right p-0 t-align-right">
+                                        <h6 class="my-0 py-2 font-13">11%</h6>
+                                    </div>
+                                </div>
+                                <div class="row my-2 mx-0 p-0">
+                                    <div class="star-listing-left p-0">
+                                        <h6 class="py-2 font-13">2 Star</h6>
+                                    </div>
+                                    <div class="star-listing-center p-0">
+                                        <div style="width:02%;"></div>
+                                    </div>
+                                    <div class="star-listing-right p-0 t-align-right">
+                                        <h6 class="my-0 py-2 font-13">02%</h6>
+                                    </div>
+                                </div>
+                                <button class="alt-menu-danger my-3 mx-auto">
+                                    Rate and Review
+                                </button>
+                            </div>
+                            <div class="row bg-white rounded m-all shadow-sm p-0 mb-3">
+                                <div class="row mx-0 mt-0 mb-3 px-4 pt-4 pb-0">
+                                    <h5 class="py-2 px-0 col-auto">
+                                        All Ratings &amp; Reviews
+                                    </h5>
+                                    <button class="alt-menu-danger" style="margin:auto 0 auto auto;">
+                                        Top Rated
+                                    </button>
+                                </div>
+                                <div class="row m-0 px-4 pb-4 pt-0 border-bottom">
+                                    <img src="images/profile_bg.png" class="profile-img p-0">
+                                    <div class="col m-0 p-0">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-auto px-2">
+                                                <h6>
+                                                    Singh Osahan
+                                                </h6>
+                                                <p class="color-grey p-0">
+                                                    Tue 20, Mar 2020
+                                                </p>
+                                            </div>
+                                            <span class="star-rating pb-2" style="margin:auto 0 auto auto; font-size:6px;">
+                                                <a href="#">
+                                                    <i class="icofont-ui-rating icofont-2x active"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icofont-ui-rating icofont-2x active"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icofont-ui-rating icofont-2x active"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icofont-ui-rating icofont-2x active"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icofont-ui-rating icofont-2x active"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <p class="color-grey px-2">
+                                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+                                        </p>
+                                        <div class="row px-3">
+                                            <a href="#" class="reaction-btn">
+                                                <i class="icofont-thumbs-up"></i>
+                                                856M
+                                            </a>
+                                            <a href="#" class="reaction-btn">
+                                                <i class="icofont-thumbs-down"></i>
+                                                158K
+                                            </a>
+                                            <span class="total-like-user-main">
+                                                <a href="#">
+                                                    <img src="images/4.png" class="total-like-user rounded-pill">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/5.png" class="total-like-user rounded-pill">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/18.png" class="total-like-user rounded-pill">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/19.png" class="total-like-user rounded-pill">
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row m-0 p-4 border-bottom">
+                                    <img src="images/17.png" class="profile-img p-0">
+                                    <div class="col m-0 p-0">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-auto px-2">
+                                                <h6>
+                                                    Gurdeep Singh
+                                                </h6>
+                                                <p class="color-grey p-0">
+                                                    Tue 20, Mar 2020
+                                                </p>
+                                            </div>
+                                            <span class="star-rating pb-2" style="margin:auto 0 auto auto; font-size:6px;">
+                                                <a href="#">
+                                                    <i class="icofont-ui-rating icofont-2x active"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icofont-ui-rating icofont-2x active"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icofont-ui-rating icofont-2x active"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icofont-ui-rating icofont-2x active"></i>
+                                                </a>
+                                                <a href="#">
+                                                    <i class="icofont-ui-rating icofont-2x active"></i>
+                                                </a>
+                                            </span>
+                                        </div>
+                                        <p class="color-grey px-2">
+                                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                                        </p>
+                                        <div class="row px-3">
+                                            <a href="#" class="reaction-btn">
+                                                <i class="icofont-thumbs-up"></i>
+                                                88K
+                                            </a>
+                                            <a href="#" class="reaction-btn">
+                                                <i class="icofont-thumbs-down"></i>
+                                                1K
+                                            </a>
+                                            <span class="total-like-user-main">
+                                                <a href="#">
+                                                    <img src="images/4.png" class="total-like-user rounded-pill">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/5.png" class="total-like-user rounded-pill">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/18.png" class="total-like-user rounded-pill">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="images/19.png" class="total-like-user rounded-pill">
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row p-4 m-0">
+                                    <a href="#" id="all-reviews">
+                                        See All Reviews
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row bg-white rounded m-all shadow-sm p-4 mb-3">
+                                <h5 class="py-2 px-0">Leave Comment</h5>
+                                <p class="color-grey p-0">
+                                    Rate the place
+                                </p>
+                                <span class="star-rating mx-0 mb-3 mt-0 p-0">
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="icofont-ui-rating icofont-2x active"></i>
+                                    </a>
+                                </span>
+                                <form class="p-0">
+                                    <div class="form-group">
+                                        <label class="mb-2">Your Comment</label>
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn-orange mt-3" style="font-size:13px; padding:7px 12px;" type="button"> Submit Comment </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row px-2 py-4 mt-5 bg-white rounded shadow-sm ml-27">
+                            <div class="col-3">
+                                <img id="offer-img" src="images/earn-score-icon.png">                                                                   
+                            </div>
+                            <div class="col-9">
+                                <div class="row">
+                                    <h6 class="pt-0 color-orange mb-1">OFFER</h6>
+                                    <p class="mb-0">
+                                        60% off on orders above $99 | Use coupon 
+                                        <span class="color-orange">
+                                            OSAHAN50
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gradient-bg rounded my-4 shadow-sm ml-27">
+                            <div class="row mb-4 p-4 mx-0">
+                                <h5 class="mb-1 text-white">Your Order</h5>
+                                <p class="mb-4 text-white">6 ITEMS</p>
+                                <div class="mb-2 bg-white">
+                                    <div class="row p-2 border-bottom" data-unit-price="314">
+                                        <i class="icofont-ui-press text-danger item-1"></i>
+                                        <h6 class="m-0" style="font-size:13px; width:auto;">
+                                            Chicken Tikka Sub
+                                        </h6>
+                                        <span id="count-numbers" class="p-0 col-auto" style="margin-left:auto; margin-right:9px;">
+                                            <button class="count-btn minus-btn px-1">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <b class="unit-count">1</b>
+                                            <button class="count-btn plus-btn px-1">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="color-grey amount px-0 m-0 col-auto">$314</span>
+                                    </div>
+                                    <div class="row p-2 border-bottom" data-unit-price="260">
+                                        <i class="icofont-ui-press text-success item-2"></i>
+                                        <h6 class="m-0" style="font-size:13px; width:auto;">
+                                            Cheese corn Roll
+                                        </h6>
+                                        <span id="count-numbers" class="p-0 col-auto" style="margin-left:auto; margin-right:9px;">
+                                            <button class="count-btn minus-btn px-1">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <b class="unit-count">1</b>
+                                            <button class="count-btn plus-btn px-1">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="color-grey amount p-0 m-0 col-auto">$260</span>
+                                    </div>
+                                    <div class="row p-2 border-bottom" data-unit-price="260">
+                                        <i class="icofont-ui-press text-success item-2"></i>
+                                        <h6 class="m-0" style="font-size:13px; width:auto;">
+                                            Cheese corn Roll
+                                        </h6>
+                                        <span id="count-numbers" class="p-0 col-auto" style="margin-left:auto; margin-right:9px;">
+                                            <button class="count-btn minus-btn px-1">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <b class="unit-count">1</b>
+                                            <button class="count-btn plus-btn px-1">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="color-grey amount p-0 m-0 col-auto">$260</span>
+                                    </div>
+                                    <div class="row p-2 border-bottom" data-unit-price="56">
+                                        <i class="icofont-ui-press text-success item-2"></i>
+                                        <h6 class="m-0" style="font-size:13px; width:auto;">
+                                            Coke [330 ml]
+                                        </h6>
+                                        <span id="count-numbers" class="p-0 col-auto" style="margin-left:auto; margin-right:9px;">
+                                            <button class="count-btn minus-btn px-1">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <b class="unit-count">1</b>
+                                            <button class="count-btn plus-btn px-1">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="color-grey amount p-0 m-0 col-auto">$056</span>
+                                    </div>
+                                    <div class="row p-2 border-bottom" data-unit-price="625">
+                                        <i class="icofont-ui-press text-danger item-1"></i>
+                                        <h6 class="m-0" style="font-size:13px; width:auto;">
+                                            Black Dal Makhani
+                                        </h6>
+                                        <span id="count-numbers" class="p-0 col-auto" style="margin-left:auto; margin-right:9px;">
+                                            <button class="count-btn minus-btn px-1">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <b class="unit-count">1</b>
+                                            <button class="count-btn plus-btn px-1">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="color-grey amount p-0 m-0 col-auto">$625</span>
+                                    </div>
+                                    <div class="row p-2 border-bottom" data-unit-price="122">
+                                        <i class="icofont-ui-press text-danger item-1"></i>
+                                        <h6 class="m-0" style="font-size:13px; width:auto;">
+                                            Mixed Veg
+                                        </h6>
+                                        <span id="count-numbers" class="p-0 col-auto" style="margin-left:auto; margin-right:9px;">
+                                            <button class="count-btn minus-btn px-1">
+                                                <i class="icofont-minus"></i>
+                                            </button>
+                                            <b class="unit-count">1</b>
+                                            <button class="count-btn plus-btn px-1">
+                                                <i class="icofont-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="color-grey amount p-0 m-0 col-auto">$122</span>
+                                    </div>
+                                </div>
+                                <div class="mb-2 bg-white p-2 t-align-right">
+                                    <img class="img-fluid f-left" src="images/wallet-icon.png">
+                                    <h6 class="font-weight-bold text-right mb-2">
+                                        Subtotal : 
+                                        <span class="text-danger">
+                                            $456.4
+                                        </span>
+                                    </h6>
+                                    <p class="color-grey font-bold mb-1">Extra charges may apply</p>
+                                    <p class="text-black font-bold mb-0">You have saved $955 on the bill</p>
+                                </div>
+                                <a href="#" class="btn-3">
+                                    Checkout 
+                                    <i class="icofont-long-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row rounded my-4 shadow-sm ml-27">
+                            <div class="text-center bg-grey google-ads-banner">
+                                <span class="google-ads-banner-span">
+                                    Google ads
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row rounded mt-4 mb-5 shadow-sm ml-27">
+                            <div class="text-center bg-grey google-ads-banner">
+                                <span class="google-ads-banner-span">
+                                    Google ads
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 t-align-center bg-white">
+            <div class="container">
+                <div class="row">
+                    <h5 class="m-0">
+                        Operate food store or restaurants?
+                        <a href="#" class="color-orange">
+                            Work With Us
+                        </a>
+                    </h5>
+                </div>
+            </div>
+        </section>
+        <section class="bg-lg py-5">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="col-md-5 mb-5">
+                        <h6 class="mb-3">
+                            Subscribe to our Newsletter
+                        </h6>
+                        <div class="row">
+                             <form action="#" class="mb-1" id="sub-form">
+                                <input type="text" placeholder="Please enter your email" id="c-form">
+                                <button type="button" class="btn-2">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                        <p class="mt-5">
+                            <a href="#" class="color-blue">
+                                Register now
+                            </a>
+                             to get updates on 
+                            <a href="#" class="color-orange">
+                                Offers and Coupons
+                            </a>
+                        </p>
+                        <div class="col-12">
+                            <p class="mb-2">DOWNLOAD APP</p>
+                            <a href="#">
+                                <img class="img-fluid" src="images/google.png">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="images/apple.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <div class="row">
+                            <h6 class="mb-3">About OE</h6>
+                            <ul class="list-unstyled">
+                                <li class="py-1">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Culture</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <div class="row">
+                            <h6 class="mb-3">For Foodies</h6>
+                            <ul class="list-unstyled">
+                                <li class="py-1">
+                                    <a href="#">Community</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Developers</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Blogger Help</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Verified Users</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Code of Conduct</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <h6 class="mb-3">For Restaurants</h6>
+                        <ul class="list-unstyled">
+                            <li class="py-1">
+                                <a href="#">Advertise</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">Add a Restaurant</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">Claim your Listing</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">For Businesses</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">Owner Guidelines</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-black">POPULAR COUNTRIES</p>
+                        <div class="links">
+                            <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a> | <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a> <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a> | <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a>
+                        </div>
+                        <p class="mt-4 text-black">POPULAR FOOD</p>
+                        <div class="links">
+                            <a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a> | <a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a><a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a> | <a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-4 t-align-center bg-lg">
+            <div class="container">
+                <div class="row">
+                    <p class="my-0">© Copyright 2019 Food Line. All Rights Reserved</p>
+                    <small class="my-0">
+                        Made with 
+                        <i class="fas fa-heart heart-icon text-danger"></i>
+                        by
+                        <a class="text-danger" href="#">Gurdeep Osahan</a>
+                         - 
+                        <a class="text-primary" target="_blank" href="#">
+                            Ask Bootstrap
+                        </a>
+                    </small>
+                </div>
+            </div>
+        </footer>
+
+        <script src="owlcarousel/jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

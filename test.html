@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Line - Online Food Ordering Website HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link href="icofont/icofont.min.css" rel="stylesheet">
+	<link href="fontawesome/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+	
+	<style>
+		#menu{
+			display:block;
+			margin:0px;
+			padding:0px;
+		}
+		
+		#menu > li{
+			display:inline-block;
+			list-style-type:none;
+		}
+		
+		#menu > li.dropdown{
+			position:relative;
+			top:0px;
+			bottom:0px;
+		}
+		
+		
+		#menu > li > a{
+			display:block;
+			padding:18px;
+			line-height:36px;
+		}
+		
+		#menu > li > ul{
+			position:absolute;
+			top:72px;
+			left:0px;
+			width:270px;
+			display:none;
+			margin:0px;
+			padding:0px;
+			z-index:10000;
+			border-radius:0 18px 18px 18px;
+		} 
+		
+		#menu > li > ul > li{
+			display:block;
+			list-style-type:none;
+			border-bottom:1px dotted #ccc;
+		}
+		
+		#menu > li > ul > li > a{
+			display:block;
+			padding:9px 18px;
+		}
+		
+		#menu > li:hover{
+			background-color:#f7f7f7;
+		}
+		#menu > li.dropdown:hover > ul{
+			background-color:orange;
+			display:block;
+		}
+		
+		#menu > li.dropdown > ul > li:hover{
+			background-color:#fff;
+		}
+		
+		.ml-1{
+			margin-left:18px;
+		}
+		
+		@media only screen and (max-width:600px){
+			
+			#menu > li{
+				display:block;
+				width:100%
+				list-style-type:none;
+			}
+		
+		
+			#menu > li.dropdown:hover > ul{
+				background-color:orange;
+				display:none;
+			}
+			
+			#menu > li > ul{
+				position:relative;
+				top:0px;
+				left:0px;
+				width:100%;
+				display:none;
+				margin:0px;
+				padding:0px;
+				z-index:10000;
+				border-radius:0 18px 18px 18px;
+			} 
+		}
+	</style>
+	
+</head>
+<body>
+
+<nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul id="menu">
+					<li>
+						<a href="">Home</a>
+					</li>
+					<li>
+						<a href="">About</a>
+					</li>
+					<li class="dropdown">
+						<a href="">
+							Services
+							<i class="fa fa-chevron-down ml-1"></i>
+						</a>
+						<ul>
+							<li>
+								<a>Custom Web Application Development</a>
+							</li>
+							<li>
+								<a>Mobile Application Development</a>
+							</li>
+							<li>
+								<a>Embedded Device Development</a>
+							</li>
+							<li>
+								<a>Search Engine Optimization</a>
+							</li>
+							
+							
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="">
+							Advocacy
+							<i class="fa fa-chevron-down ml-1"></i>
+						</a>
+						<ul>
+							<li>
+								<a>Internet User Safety</a>
+							</li>
+							<li>
+								<a>User Experience</a>
+							</li>
+							<li>
+								<a>Light Weight Webpages</a>
+							</li>
+							
+							
+						</ul>
+					</li>
+					
+					
+					
+					<li>
+						<a href="">Contact</a>
+					</li>
+					
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+			
+			<div id="slide-1" class="owl-carousel ">
+				
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				
+				
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				
+				
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				
+				
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				
+				
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+			</div>
+
+			
+			
+		</div>
+		
+		<div class="col-md-3">
+			<div id="slide-2" class="owl-carousel">
+			
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+				<div class="item">
+					<a href="#">
+						<img src="images/slider1.png" class="rounded">
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+</div>
+
+<script src="owlcarousel/jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script>
+$('#slide-1').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:6,
+            nav:true
+        },
+        600:{
+            items:10,
+            nav:false
+        },
+        1000:{
+            items:12,
+            nav:true,
+            loop:false
+        }
+    },
+	autoplay:true
+});
+
+
+$('#slide-2').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true,
+            loop:false
+        }
+    },
+	autoplay:true
+});
+
+
+
+</script>
+</body>
+</html>
+    

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Line - Online Food Ordering Website HTML Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="icofont/icofont.min.css" rel="stylesheet">
+        <link href="fontawesome/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    </head>
+    <body>
+        <nav class="navbar bg-white shadow-sm py-3">
+            <div class="container px-2">
+                <div class="row py-1 width-100">
+                    <div class="col-md-3">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="images/logo.png">
+                        </a>
+                        <div class="navbar-toggler">
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <ul id="list">
+                            <li>
+                                <a href="index.html" class="active">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="offers.html">
+                                    <i class="icofont-sale-discount"></i>
+                                    Offers
+                                    <span class="danger-badge">
+                                        New
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-dropdown">
+								<a class="tab-links" href="#resturants-menu">
+									Resturants
+                                    <i class="icofont-caret-down"></i>
+								</a>
+								<ul id="resturants-menu" class="list-menu py-1">
+									<li>
+										<a href="listing.html">Listing</a>
+									</li>
+									<li>
+										<a href="detail.html">Detail + Cart</a>
+									</li>
+									<li>
+										<a href="checkout.html">Checkout</a>
+									</li>
+								</ul>
+							</li>
+                            <li class="menu-dropdown">
+								<a class="tab-links" href="#pages-menu">
+                                    Pages
+                                    <i class="icofont-caret-down"></i>
+								</a>
+								<ul id="pages-menu" class="list-menu py-1">
+									<li>
+										<a href="track-order.html">Track Order</a>
+									</li>
+									<li>
+										<a href="invoice.html">Invoice</a>
+									</li>
+									<li>
+										<a href="login.html">Login</a>
+									</li>
+                                    <li>
+										<a href="register.html">Register</a>
+									</li>
+                                    <li>
+										<a href="#">404</a>
+									</li>
+                                    <li>
+										<a href="#">Extra :)</a>
+									</li>
+								</ul>
+							</li>
+                            <li class="menu-dropdown">
+								<a class="tab-links" href="#account-list">
+                                    <img src="images/4.png" id="account-pic">
+                                    My Account
+                                    <i class="icofont-caret-down"></i>
+								</a>
+								<ul id="account-list" class="list-menu py-1">
+									<li>
+										<a href="orders.html#orders">
+                                            <i class="icofont-food-cart"></i>
+                                            Orders
+                                        </a>
+									</li>
+									<li>
+										<a href="orders.html#offers">
+                                            <i class="icofont-sale-discount"></i>
+                                            Offers
+                                        </a>
+									</li>
+									<li>
+										<a href="orders.html#favourites">
+                                            <i class="icofont-heart"></i>
+                                            Favourites
+                                        </a>
+									</li>
+                                    <li>
+										<a href="orders.html#payments">
+                                            <i class="icofont-credit-card"></i>
+                                            Payments
+                                        </a>
+									</li>
+                                    <li>
+										<a href="orders.html#addresses">
+                                            <i class="icofont-location-pin"></i>
+                                            Addresses
+                                        </a>
+									</li>
+								</ul>
+							</li>
+                            <li class="menu-dropdown">
+                                <a id="btn-modal" href="#">
+                                    <i class="fas fa-shopping-basket"></i>
+                                    Cart
+                                    <span class="success-badge">
+                                        5
+                                    </span>
+                                    <i class="icofont-caret-down"></i>
+                                </a>
+                                <div id="list-modal" class="shadow-sm border-0 tab-content">
+                                    <div class="row p-4">
+                                        <div class="col-3 p-0 m-0">
+                                            <img id="cart-img" class="p-1" src="images/1.jpg">
+                                        </div>
+                                        <div class="col-9 t-align-left py-0 px-1 m-0">
+                                            <h6 class="color-black mb-0 font-xbold font-12">
+                                                Gus's World Famous Chicken
+                                            </h6>
+                                            <p class="color-grey mb-0 mt-1 font-11">
+                                                310 S Front St, Memphis, USA
+                                            </p>
+                                            <small>
+                                                <a class="color-orange font-xbold" href="#">
+                                                    View Full Menu
+                                                </a>
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="t-align-left border-top p-4">
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-danger item-1 mr-1"></i>
+                                         Chicken Tikka Sub 12" (30 cm) x 1 
+                                        <span class="f-right">
+                                             $314
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-success item-2 mr-1"></i>
+                                         Corn &amp; Peas Salad x 1 
+                                        <span class="f-right">
+                                            $209
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-success item-2 mr-1"></i>
+                                         Veg Seekh Sub 6" (15 cm) x 1 
+                                        <span class="f-right">
+                                            $133
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-danger item-1 mr-1"></i>
+                                         Chicken Tikka Sub 12" (30 cm) x 1 
+                                        <span class="f-right">
+                                            $314
+                                        </span>
+                                    </p>
+                                    <p class="mb-2 color-grey">
+                                        <i class="icofont-ui-press text-danger item-1 mr-1"></i>
+                                         Corn &amp; Peas Salad x 1 
+                                        <span class="f-right">
+                                            $209
+                                        </span>
+                                    </p>
+                                    </div>
+                                    <div class="border-top t-align-left p-4">
+                                        <p class="mb-0 font-xbold color-grey">
+                                            Sub Total 
+                                            <span class="f-right color-black">
+                                                $499
+                                            </span>
+                                        </p>
+                                        <small class="text-info">
+                                            Extra charges may apply
+                                        </small>
+                                    </div>
+                                    <div class="form-group col-md-12 mb-0 p-2">
+                                        <a href="checkout.html" class="btn-3">
+                                            Checkout
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="bg-lg">
+            <div class="container">
+                <div class="row m-0 p-0">
+                    <div class="col-md-6">
+                        <div class="row p-3 my-5">
+                            <div class="rounded-point mx-auto"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row p-0 m-0">
+                            <div class="bg-white p-4 shadow-lg mt-5 mb-2">
+                                <div class="mb-2">
+                                    <small>
+                                        Order #25102589748
+                                        <a class="f-right font-xbold color-orange" href="#">
+                                            <i class="icofont-headphone-alt"></i> HELP
+                                        </a>
+                                    </small>
+                                </div>
+                                <h6 class="my-1">
+                                    <a href="detail.html" class="color-black">
+                                        Spice Hut Restaurant
+                                    </a>
+                                </h6>
+                                <p class="color-grey mb-0">
+                                    <i class="icofont-clock-time"></i> 04:19 PM | 8 Items | $314
+                                </p>
+                            </div>
+                            <div class="bg-white p-4 shadow-lg">
+                                <div class="row">
+                                    <h5 class="mt-0 mb-3">Order Details</h5>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <small>FROM</small>
+                                            <h6 class="mb-1 mt-1">
+                                                <a href="detail.html" class="color-black">
+                                                    <i class="icofont-food-cart"></i> Spice Hut Restaurant
+                                                </a>
+                                            </h6>
+                                            <p class="color-grey mb-5">
+                                                2036, NEW YORK
+                                            </p>
+                                            <small>DELIVER TO</small>
+                                            <h6 class="mb-1 mt-1">
+                                                <span class="text-black">
+                                                    <i class="icofont-map-pins"></i> Other
+                                            </span>
+                                            </h6>
+                                            <p class="color-grey mb-0">
+                                                291, Jawaddi Kalan, Ludhiana, Punjab 141002, India
+                                            </p>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="mb-2">
+                                                <small>
+                                                    <i class="icofont-list"></i> 5 ITEMS
+                                                </small>
+                                            </div>
+                                            <p class="mb-2 color-grey">
+                                                <i class="icofont-ui-press text-danger item-1"></i> Chicken Tikka Sub 12" (30 cm) x 1 
+                                                <span class="f-right">
+                                                    $314
+                                                </span>
+                                            </p>
+                                            <p class="mb-2 color-grey">
+                                                <i class="icofont-ui-press text-success item-2"></i> Corn &amp; Peas Salad x 1 
+                                                <span class="f-right">
+                                                    $209
+                                                </span>
+                                            </p>
+                                            <p class="mb-2 color-grey">
+                                                <i class="icofont-ui-press text-success item-2"></i> Veg Seekh Sub 6" (15 cm) x 1 
+                                                <span class="f-right">
+                                                    $133
+                                                </span>
+                                            </p>
+                                            <p class="mb-2 color-grey">
+                                                <i class="icofont-ui-press text-danger item-1"></i> Chicken Tikka Sub 12" (30 cm) x 1 
+                                                <span class="f-right">
+                                                    $314
+                                                </span>
+                                            </p>
+                                            <hr>
+                                            <p class="mb-0 font-xbold color-black">
+                                                TOTAL BILL 
+                                                <span class="f-right color-grey">
+                                                    $209
+                                                </span>
+                                            </p>
+                                            <p class="mb-0">
+                                                <small class="text-info">
+                                                    Paid via Credit/Debit card
+                                                    <span class="f-right text-danger">
+                                                        $620 OFF
+                                                    </span>
+                                                </small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 shadow-lg mt-2 mb-5">
+                                <div class="row text-center">
+                                    <div class="col">
+                                        <i class="icofont-tasks icofont-3x text-info"></i>
+                                        <p class="mt-1 font-xbold text-black mb-0">
+                                            Order Received
+                                        </p>
+                                        <small class="text-info mb-0">
+                                            NOW
+                                        </small>
+                                    </div>
+                                    <div class="col">
+                                        <i class="icofont-check-circled icofont-3x text-success"></i>
+                                        <p class="mt-1 font-xbold text-black mb-0">
+                                            Order Confirmed
+                                        </p>
+                                        <small class="text-success mb-0">
+                                            NEXT
+                                        </small>
+                                    </div>
+                                    <div class="col">
+                                        <i class="icofont-delivery-time icofont-3x text-primary"></i>
+                                        <p class="mt-1 font-xbold text-black mb-0">
+                                            Order Picked Up
+                                        </p>
+                                        <small class="text-primary mb-0">
+                                            LATER (ET : 30min)
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 t-align-center bg-white">
+            <div class="container">
+                <div class="row">
+                    <h5 class="m-0">
+                        Operate food store or restaurants?
+                        <a href="#" class="color-orange">
+                            Work With Us
+                        </a>
+                    </h5>
+                </div>
+            </div>
+        </section>
+        <section class="bg-lg py-5">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="col-md-5 mb-5">
+                        <h6 class="mb-3">
+                            Subscribe to our Newsletter
+                        </h6>
+                        <div class="row">
+                             <form action="#" class="mb-1" id="sub-form">
+                                <input type="text" placeholder="Please enter your email" id="c-form">
+                                <button type="button" class="btn-2">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                        <p class="mt-5">
+                            <a href="#" class="color-blue">
+                                Register now
+                            </a>
+                             to get updates on 
+                            <a href="#" class="color-orange">
+                                Offers and Coupons
+                            </a>
+                        </p>
+                        <div class="col-12">
+                            <p class="mb-2">DOWNLOAD APP</p>
+                            <a href="#">
+                                <img class="img-fluid" src="images/google.png">
+                            </a>
+                            <a href="#">
+                                <img class="img-fluid" src="images/apple.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <div class="row">
+                            <h6 class="mb-3">About OE</h6>
+                            <ul class="list-unstyled">
+                                <li class="py-1">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Culture</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Careers</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <div class="row">
+                            <h6 class="mb-3">For Foodies</h6>
+                            <ul class="list-unstyled">
+                                <li class="py-1">
+                                    <a href="#">Community</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Developers</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Blogger Help</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Verified Users</a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="#">Code of Conduct</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-5">
+                        <h6 class="mb-3">For Restaurants</h6>
+                        <ul class="list-unstyled">
+                            <li class="py-1">
+                                <a href="#">Advertise</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">Add a Restaurant</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">Claim your Listing</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">For Businesses</a>
+                            </li>
+                            <li class="py-1">
+                                <a href="#">Owner Guidelines</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-black">POPULAR COUNTRIES</p>
+                        <div class="links">
+                            <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a> | <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a> <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a> | <a href="#">Australia</a> | <a href="#">Brasil</a> | <a href="#">Canada</a> | <a href="#">Chile</a> | <a href="#">Czech Republic</a> | <a href="#">India</a> | <a href="#">Indonesia</a> | <a href="#">Ireland</a> | <a href="#">New Zealand</a> | <a href="#">United Kingdom</a> | <a href="#">Turkey</a> | <a href="#">Philippines</a> | <a href="#">Sri Lanka</a>
+                        </div>
+                        <p class="mt-4 text-black">POPULAR FOOD</p>
+                        <div class="links">
+                            <a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a> | <a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a><a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a> | <a href="#">Fast Food</a> | <a href="#">Chinese</a> | <a href="#">Street Food</a> | <a href="#">Continental</a> | <a href="#">Mithai</a> | <a href="#">Cafe</a> | <a href="#">South Indian</a> | <a href="#">Punjabi Food</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-4 t-align-center bg-lg">
+            <div class="container">
+                <div class="row">
+                    <p class="my-0">© Copyright 2019 Food Line. All Rights Reserved</p>
+                    <small class="my-0">
+                        Made with 
+                        <i class="fas fa-heart heart-icon text-danger"></i>
+                        by
+                        <a class="text-danger" href="#">Gurdeep Osahan</a>
+                         - 
+                        <a class="text-primary" target="_blank" href="#">
+                            Ask Bootstrap
+                        </a>
+                    </small>
+                </div>
+            </div>
+        </footer>
+
+        <script src="owlcarousel/jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
